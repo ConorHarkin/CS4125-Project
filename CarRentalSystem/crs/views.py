@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect 
 from .forms import LoginForm, RegistrationForm
 from .models import User
 
@@ -36,3 +36,7 @@ def register(request):
 def dashboard(request):
     # Your dashboard view logic goes here
     return render(request, 'crs/home.html') 
+
+def reservations(request):
+    # Your reservations view logic goes here
+    return render(request, 'reservations.html')  # Assuming 'reservations.html' is your reservations page template
